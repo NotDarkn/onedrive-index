@@ -13,10 +13,6 @@ import { runCorsMiddleware } from './raw'
 const basePath = pathPosix.resolve('/', siteConfig.baseDirectory)
 const clientSecret = revealObfuscatedToken(apiConfig.obfuscatedClientSecret)
 
-export const config = {
-  runtime: 'edge', // 'nodejs' is the default
-};
-
 /**
  * Encode the path of the file relative to the base directory
  *

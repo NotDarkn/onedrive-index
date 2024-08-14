@@ -7,7 +7,7 @@
   "deploy": "npm run pages:build && wrangler pages deploy",
   "scripts": {
     "dev": "next dev",
-    "build": "mv out .vercel/output/static && next build",
+    "build": "next build",
     "start": "next start",  
     "lint": "next lint",
     "format": "prettier 'src/**/*.{js,ts,jsx,tsx}' --write",

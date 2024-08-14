@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { posix as pathPosix } from 'path'
 
 import type { NextApiRequest, NextApiResponse } from 'next'

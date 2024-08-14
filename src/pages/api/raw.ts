@@ -7,6 +7,10 @@ import Cors from 'cors'
 import { driveApi, cacheControlHeader } from '../../../config/api.config'
 import { encodePath, getAccessToken, checkAuthRoute } from '.'
 
+export const config = {
+  runtime: 'edge', // 'nodejs' is the default
+};
+
 // CORS middleware for raw links: https://nextjs.org/docs/api-routes/api-middlewares
 export function runCorsMiddleware(req: NextApiRequest, res: NextApiResponse) {
   const cors = Cors({ methods: ['GET', 'HEAD'] })

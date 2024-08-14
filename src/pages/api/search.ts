@@ -5,6 +5,10 @@ import { encodePath, getAccessToken } from '.'
 import apiConfig from '../../../config/api.config'
 import siteConfig from '../../../config/site.config'
 
+export const config = {
+  runtime: 'edge', // 'nodejs' is the default
+};
+
 /**
  * Sanitize the search query
  *

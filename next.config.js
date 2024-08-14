@@ -1,5 +1,4 @@
 const { i18n } = require('./next-i18next.config')
-export const runtime = "edge";
 
 module.exports = {
   i18n,

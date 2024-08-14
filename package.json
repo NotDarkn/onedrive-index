@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",  
+    "start": "next start",
     "lint": "next lint",
+    "vercel": "vercel",
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
@@ -58,7 +59,8 @@
     "remark-math": "^5.1.1",
     "swr": "^2.2.5",
     "use-clipboard-copy": "^0.2.0",
-    "use-constant": "^1.1.1"
+    "use-constant": "^1.1.1",
+    "vercel": "^35.2.4"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.2",
